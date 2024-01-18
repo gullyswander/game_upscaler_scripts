@@ -132,7 +132,7 @@ class TextureProcessingApp:
                                 '-o', output_path,
                                 "j", "4:4:4"
                             ]
-                            # subprocess.call(command)
+                            subprocess.call(command)
                             self.update_log(f"Completed: {texture_path}")
 
                     write_ignore_file(f"{upscale_metadata_path}/ignore.json", files_to_ignore)
